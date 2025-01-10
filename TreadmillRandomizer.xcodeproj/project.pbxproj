@@ -11,6 +11,11 @@
 		20211CC02B13E9DB0085F50B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20211CBF2B13E9DB0085F50B /* ContentView.swift */; };
 		20211CC22B13E9DC0085F50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20211CC12B13E9DC0085F50B /* Assets.xcassets */; };
 		20211CC52B13E9DC0085F50B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20211CC42B13E9DC0085F50B /* Preview Assets.xcassets */; };
+		20211CD12B13F04C0085F50B /* SpeedSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20211CD02B13F04C0085F50B /* SpeedSelector.swift */; };
+		20211CD32B13F5990085F50B /* ElevationSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20211CD22B13F5990085F50B /* ElevationSelector.swift */; };
+		20834FCB2B154AA90053F3BE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20834FCA2B154AA90053F3BE /* TimerView.swift */; };
+		20834FCD2B154FCE0053F3BE /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20834FCC2B154FCE0053F3BE /* RingShape.swift */; };
+		20834FCF2B1551B80053F3BE /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20834FCE2B1551B80053F3BE /* Ring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		20211CBF2B13E9DB0085F50B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20211CC12B13E9DC0085F50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20211CC42B13E9DC0085F50B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20211CD02B13F04C0085F50B /* SpeedSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedSelector.swift; sourceTree = "<group>"; };
+		20211CD22B13F5990085F50B /* ElevationSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationSelector.swift; sourceTree = "<group>"; };
+		20834FCA2B154AA90053F3BE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		20834FCC2B154FCE0053F3BE /* RingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
+		20834FCE2B1551B80053F3BE /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				20211CBD2B13E9DB0085F50B /* TreadmillRandomizerApp.swift */,
 				20211CBF2B13E9DB0085F50B /* ContentView.swift */,
+				20834FCA2B154AA90053F3BE /* TimerView.swift */,
+				20834FCC2B154FCE0053F3BE /* RingShape.swift */,
+				20834FCE2B1551B80053F3BE /* Ring.swift */,
+				20211CD02B13F04C0085F50B /* SpeedSelector.swift */,
+				20211CD22B13F5990085F50B /* ElevationSelector.swift */,
 				20211CC12B13E9DC0085F50B /* Assets.xcassets */,
 				20211CC32B13E9DC0085F50B /* Preview Content */,
 			);
@@ -83,6 +98,8 @@
 			dependencies = (
 			);
 			name = TreadmillRandomizer;
+			packageProductDependencies = (
+			);
 			productName = TreadmillRandomizer;
 			productReference = 20211CBA2B13E9DB0085F50B /* TreadmillRandomizer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,8 @@
 				Base,
 			);
 			mainGroup = 20211CB12B13E9DB0085F50B;
+			packageReferences = (
+			);
 			productRefGroup = 20211CBB2B13E9DB0085F50B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20211CD12B13F04C0085F50B /* SpeedSelector.swift in Sources */,
+				20834FCD2B154FCE0053F3BE /* RingShape.swift in Sources */,
+				20834FCF2B1551B80053F3BE /* Ring.swift in Sources */,
 				20211CC02B13E9DB0085F50B /* ContentView.swift in Sources */,
 				20211CBE2B13E9DB0085F50B /* TreadmillRandomizerApp.swift in Sources */,
+				20834FCB2B154AA90053F3BE /* TimerView.swift in Sources */,
+				20211CD32B13F5990085F50B /* ElevationSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +299,12 @@
 				DEVELOPMENT_TEAM = UD8D6H2HKG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Treadmill Workout";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +329,12 @@
 				DEVELOPMENT_TEAM = UD8D6H2HKG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Treadmill Workout";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
